@@ -12,14 +12,6 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        margin-top: 80px; /* Увеличиваем расстояние от меню */
-        text-align: center;
-    }
-}
-
-
 /* Слой размытого фона */
 .blur-background {
     content: "";
