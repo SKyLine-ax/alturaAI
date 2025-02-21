@@ -25,13 +25,27 @@ body {
     z-index: -1;
 }
 
-/* Шапка */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; 
+        background-attachment: scroll; 
+        height: auto;
+    }
+
+    .blur-background {
+        backdrop-filter: blur(5px); 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+
+
 header {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Центрирует всё содержимое */
+    justify-content: center; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,8 +54,8 @@ header {
 }
 
 .logo {
-    position: absolute; /* Лого "выносится" из основного потока */
-    left: 20px; /* Закрепляем его слева */
+    position: absolute; 
+    left: 20px;
     color: #000000;
     font-size: 17px;
     font-weight: bold;
@@ -88,7 +102,7 @@ nav ul li a:hover {
     border-color: #007BFF;
 }
 
-/* Герой-секция */
+
 .hero {
     display: flex;
     align-items: center;
@@ -185,7 +199,7 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
-/* Окна с информацией */
+
 .highlight {
     background-color: #ffffff;
     padding: 30px;
@@ -227,7 +241,7 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Контакты */
+
 .contacts {
     padding: 60px 20px;
     text-align: center;
