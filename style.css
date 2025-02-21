@@ -43,7 +43,7 @@ header {
     position: absolute; /* Лого "выносится" из основного потока */
     left: 20px; /* Закрепляем его слева */
     color: #000000;
-    font-size: 24px;
+    font-size: 17px;
     font-weight: bold;
 }
 
